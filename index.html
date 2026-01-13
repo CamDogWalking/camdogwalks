@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cam Dog Walks | Dog Walking in Motherwell & Bellshill</title>
+
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #eef3f2;
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2f6f6b, #4fa3a1);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        section {
+            width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #2f6f6b;
+            border-bottom: 2px solid #d6e7e5;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .box {
+            background: #f4faf9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2f6f6b;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #2f6f6b;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #245652;
+        }
+
+        iframe {
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #2f6f6b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cam's Dog Walking</h1>
+    <p>Professional, caring dog walking services for your beloved companion</p>
+    <p><strong>Available:</strong> Tuesday – Thursday, 5:00 PM – 8:00 PM</p>
+</header>
+
+<section>
+    <h2>Why Choose Us</h2>
+    <p>
+        Every dog deserves a great walk. I provide attentive, professional care during evening hours,
+        ensuring your dog gets the exercise, safety, and attention they deserve.
+    </p>
+
+    <div class="grid">
+        <div class="box">
+            <h3>Caring & Attentive</h3>
+            <p>Your dog's safety and happiness always come first.</p>
+        </div>
+
+        <div class="box">
+            <h3>Flexible Evening Hours</h3>
+            <p>Available Tuesday to Thursday evenings.</p>
+        </div>
+
+        <div class="box">
+            <h3>Fully Equipped</h3>
+            <p>Water, poo bags, and portable bowl provided.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Pricing</h2>
+
+    <div class="grid">
+        <div class="box">
+            <h3>Short Walk</h3>
+            <p class="price">£5</p>
+            <p>15 minute walk</p>
+        </div>
+
+        <div class="box">
+            <h3>Standard Walk</h3>
+            <p class="price">£10</p>
+            <p>30 minute walk</p>
+        </div>
+
+        <div class="box">
+            <h3>Extended Walk</h3>
+            <p class="price">£15</p>
+            <p>60 minute walk</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Home Address / Base Area</h2>
+    <p>
+        Cam’s Dog Walking is proudly based in
+        <strong>Motherwell (ML1)</strong>.
+    </p>
+    <p>
+        I primarily offer dog walking services within Motherwell and nearby areas,
+        including <strong>Bellshill</strong>.  
+        If you are unsure whether your location is covered, feel free to get in touch.
+    </p>
+</section>
+
+<section>
+    <h2>Dog Walking Areas</h2>
+    <p>
+        I currently offer dog walking services in
+        <strong>Motherwell</strong> and <strong>Bellshill</strong>.
+    </p>
+
+    <iframe
+        src="https://www.google.com/maps?q=Motherwell%20and%20Bellshill&output=embed"
+        width="100%"
+        height="400"
+        allowfullscreen
+        loading="lazy">
+    </iframe>
+</section>
+
+<section>
+    <h2>Book a Walk</h2>
+    <p>Your booking request will be sent directly to my email.</p>
+
+    <form action="https://formspree.io/f/mbddjedp" method="POST">
+
+        <label>Your Name</label>
+        <input type="text" name="Name" required>
+
+        <label>Dog’s Name</label>
+        <input type="text" name="Dog Name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="Email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="Phone" required>
+
+        <label>Emergency Contact Number</label>
+        <input type="tel" name="Emergency Contact">
+
+        <label>Any medicine we should know about?</label>
+        <textarea name="Medicine"></textarea>
+
+        <label>Is your dog friendly or does it require a muzzle?</label>
+        <textarea name="Temperament"></textarea>
+
+        <label>Any other important information?</label>
+        <textarea name="Other Info"></textarea>
+
+        <button type="submit">Send Booking Request</button>
+    </form>
+</section>
+
+<footer>
+    <h3>Cam's Dog Walking</h3>
+    <p>Providing quality care for your furry friends</p>
+    <p>Evening Hours: Tuesday – Thursday, 5:00 PM – 8:00 PM</p>
+    <p>© 2024 Cam's Dog Walking. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
